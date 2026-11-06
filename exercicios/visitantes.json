@@ -1,0 +1,50 @@
+[
+    {
+        "nome": "Lucas Ariel",
+        "data_nascimento": "17/06/2006",
+        "cpf": "05297679028",
+        "tipo_ingresso": "Premium",
+        "data_visita": "20/02/2026",
+        "numero_ingresso": "1239afcc-4c0f-4555-a701-b4d760421483"
+    },
+    {
+        "nome": "Jessica Santos",
+        "data_nascimento": "25/07/2002",
+        "cpf": "6789009876",
+        "tipo_ingresso": "Normal",
+        "data_visita": "31/10/2026",
+        "numero_ingresso": "596176da-4fe1-4647-82de-4738058c20c6"
+    },
+    {
+        "nome": "Bianca Ortiz",
+        "data_nascimento": "23/09/2000",
+        "cpf": "7890123456",
+        "tipo_ingresso": "VIP",
+        "data_visita": "13/12/2026",
+        "numero_ingresso": "efb4b3aa-f3a6-4059-92f7-3c26e436d002"
+    },
+    {
+        "nome": "Neymar Junior",
+        "data_nascimento": "08/08/1999",
+        "cpf": "1010101010",
+        "tipo_ingresso": "Premium",
+        "data_visita": "01/10/2026",
+        "numero_ingresso": "96b4f8a2-415a-4bc4-9cec-d94ecafe87c3"
+    },
+    {
+        "nome": "Sabrina Silva",
+        "data_nascimento": "20/01/1999",
+        "cpf": "0011223344",
+        "tipo_ingresso": "Premium",
+        "data_visita": "25/12/2026",
+        "numero_ingresso": "e3835a23-c5f2-4bd1-8933-27fe14aa7820"
+    },
+    {
+        "nome": "Jurandir da Silveira",
+        "data_nascimento": "08/08/1958",
+        "cpf": "0000000000",
+        "tipo_ingresso": "Normal",
+        "data_visita": "12/12/2026",
+        "numero_ingresso": "923ff28c-d377-44dd-b31c-c4cc1ad2f487"
+    }
+]

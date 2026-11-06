@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Visitantes
+{% endblock %}
+    
+{% block content %}
+    <div class="container-fluid pt-5">
+        <h1>Atualizar Visitante existente</h1>
+        <p>Use o formulario abaixo para atualizar um visitante</p>
+
+        <form action="./" method="post">
+            {% csrf_token %}
+
+            <div class="d-flex gap-3 flex-wrap">
+                <div class="col">
+                    <div>
+                        <label for="first_name" class="form-label">Primeiro Nome</label>
+                        <input type="text" class="form-control" id="first_name" name="first_name"
+                            value="{{ form.instance.first_name }}">
+                        <div class="form-text text-danger">
+                            {% if form.first_name.errors %}
+                            {% for error in form.first_name.errors %}
+                            <span>{{ error }}</span>
+                            {% endfor %}
+                            {% else %} &nbsp; {% endif %}
+                        </div>
+                    </div>
+                    <div>
+                        <label for="last_name" class="form-label"> Ultimo Nome</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name"
+                            value="{{ form.instance.last_name }}">
+                        <div class="form-text text-danger">
+                            {% if form.last_name.errors %}
+                            {% for error in form.last_name.errors %}
+                            <span>O último nome é obrigatório</span>
+                            {% endfor %}
+                            {% else %} &nbsp; {% endif %}
+                        </div>
+                    </div>
+                    <div>
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf"
+                            value="{{ form.instance.cpf }}">
+                        <div class="form-text text-danger">
+                            {% if form.cpf.errors %}
+                            {% for error in form.cpf.errors %}
+                            <span>{{ error }}</span>
+                            {% endfor %}
+                            {% else %} &nbsp; {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <label for="birth_date" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="birth_date" name="birth_date"
+                            value="{{ form.instance.birth_date|date:'Y-m-d' }}">
+                        <div class="form-text text-danger">
+                            {% if form.birth_date.errors %}
+                            {% for error in form.birth_date.errors %}
+                            <span>{{ error }}</span>
+                            {% endfor %}
+                            {% else %} &nbsp; {% endif %}
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="ticket_date" class="form-label">Data do ingresso</label>
+                        <input type="date" class="form-control" id="ticket_date" name="ticket_date"
+                            value="{{ form.instance.ticket_date|date:'Y-m-d' }}">
+                        <div class="form-text text-danger">
+                            {% if form.ticket_date.errors %}
+                            {% for error in form.ticket_date.errors %}
+                            <span>{{ error }}</span>
+                            {% endfor %}
+                            {% else %} &nbsp; {% endif %}
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="ticket_type" class="form-label">Tipo do ingresso</label>
+                        <select class="form-select" id="ticket_type" name="ticket_type">
+                            <option value="1"{% if form.instance.ticket_type == 1 %} selected{% endif %}>Normal</option>
+                            <option value="2"{% if form.instance.ticket_type == 2 %} selected{% endif %}>Vip</option>
+                            <option value="3"{% if form.instance.ticket_type == 3 %} selected{% endif %}>Premium</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
+                        <label for="ticket_number" class="form-label">Número do ingresso</label>
+                        <input type="text" class="form-control" id="ticket_number" value="{{ form.instance.ticket_number }}"
+                            disabled>
+                    </div>
+                    
+                    <div class="d-flex justify-content-end gap-3">
+                        <a href="../../" class="btn btn-outline-primary mt-3 btn-custom">Voltar</a>
+                        <input type="submit" value="Atualizar" class="btn btn-success mt-3 btn-custom">
+                    </div>
+
+                </div>
+
+            </div>
+           
+           
+
+           
+
+        </form>
+
+    
+
+    </div>
+{% endblock %}

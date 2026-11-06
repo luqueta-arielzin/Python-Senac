@@ -1,0 +1,26 @@
+/* a {
+    width: 120px;
+}
+
+button {
+    width: 120px;
+}
+
+#ticket-type {
+    color: black;
+} */
+:root {
+  --bs-body-font-family: 'Futura', sans-serif;
+}
+
+.btn-custom {
+    width: 120px;
+    height: 40px;
+}
+
+.card-custom {
+    width: 300px;
+    height: 200px;
+}
+
+

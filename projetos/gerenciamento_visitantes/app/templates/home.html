@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+Visitantes
+{% endblock %}
+    
+{% block content %}
+<div class="d-flex"  >
+
+    <div class="col text-center " >
+        <h3>Página inicial - Gerenciamento de visitantes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam blanditiis amet a? Atque minus ut quod quia eos tenetur. Quisquam reprehenderit perspiciatis, libero recusandae fugiat impedit eaque molestiae qui! Veritatis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique asperiores iusto soluta nobis explicabo maxime blanditiis minima saepe quis dolore voluptatibus aliquam, quidem aliquid reprehenderit. Esse, reiciendis! Suscipit, nostrum nam.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repellendus iure laudantium provident voluptas ad voluptate fuga nulla laborum quidem hic est voluptatem aspernatur harum sit, ullam, exercitationem cum commodi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam tempora ipsa necessitatibus expedita perferendis, libero, quod nemo quas dolorem at molestias ipsam, illo reprehenderit exercitationem! Distinctio cupiditate excepturi quis tempore?</p>
+
+        <a class="btn btn-outline-primary" href="visitors/">Ver visitantes</a>
+    </div>      
+
+
+    <div class="col d-flex justify-content-center align-items-center" >
+
+        <img src="{% static 'visitors/images/banner-home.png' %}" alt="Banner Home">
+    
+    </div>
+
+</div>
+
+{% endblock %}

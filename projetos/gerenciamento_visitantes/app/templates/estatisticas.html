@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Estatísticas
+{% endblock %}
+{% block content %}
+
+<h2>Estatísticas</h2>
+ 
+<div class="d-flex text-center flex gap-3">
+ <div class="col d-flex justify-content-center align-items-center">
+   
+ </div>
+   <div class="card card-custom p-1 mb-4 border border-2 border-info">
+     <div class="d-flex justify-content-between">
+        <h3>Total de Visitantes</h3>
+
+        <h4>
+            <i class="bi bi-person"></i>
+         </h4>
+
+     </div>
+
+        <p class="fs-1">{{ total_visitors }}</p>
+    </div>
+
+
+   <div class="card card-custom p-1 mb-4 border border-2 border-info">
+     <div class="d-flex justify-content-between">
+        <h3>Ingressos Normal</h3>
+
+        <h4>
+            <i class="bi bi-ticket-detailed-fill"></i>
+        </h4>
+
+     </div>
+
+        <p class="fs-1">{{ normal_tickets }}</p>
+    </div>
+
+    <div class="card card-custom p-1 mb-4 border border-2 border-info">
+     <div class="d-flex justify-content-between">
+        <h3>Ingressos Vip</h3>
+
+        <h4>
+            <i class="bi bi-ticket-fill"></i>
+        </h4>
+
+     </div>
+
+        <p class="fs-1">{{ vip_tickets }}</p>
+    </div>
+
+
+ <div class="card card-custom p-1 mb-4 border border-2 border-info">
+     <div class="d-flex justify-content-between">
+        <h3>Ingressos Premium</h3>
+
+        <h4>
+            <i class="bi bi-ticket-perforated-fill"></i>
+        </h4>
+
+     </div>
+
+        <p class="fs-1">{{ premium_tickets }}</p>
+    </div>
+
+
+    <div class="card card-custom p-1 mb-4 border border-2 border-info">
+     <div class="d-flex justify-content-between">
+        <h2>Média de idade</h2>
+
+        <h4>
+           <i class="bi bi-calendar-date"></i>
+        </h4>
+
+     </div>
+
+        <p class="fs-1">{{ average_age }} anos</p>
+    </div>
+
+
+
+
+
+</div>
+
+{% endblock %}
