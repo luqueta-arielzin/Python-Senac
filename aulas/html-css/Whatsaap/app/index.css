@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f1115;
+    
+}
+.header-first-column {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+   
+}
+
+.header-icone {
+   font-size: 35px;
+   color: #B6C4DB
+    
+}
+
+.header-icone:hover {
+    border: 20px solid #183636;
+}
