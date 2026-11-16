@@ -1,52 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="index.css">
-
-    <title>Whatsapp</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhatsApp</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-first-column">
-            <a href="#">
-                <i class="bi bi-whatsapp header-icone" style="color: #066F35"></i>
-            </a>
-            <a href="#">
-                <i class="bi bi-chat-left-dots-fill header-icone" style="color: #00DF81"></i>
-            </a>
-            <a href="#">
-                <i class="bi bi-people header-icone"></i>
-            </a>
-            <a href="#">
-                <i class="bi bi-compass header-icone"></i>
-            </a>
+  <div class="app">
+    <aside class="sidebar" aria-label="Navegação">
+      <nav class="side-top">
+        <button class="side-button brand active" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></button>
+        <button class="side-button active" aria-label="Conversas"><i class="bi bi-chat-left-dots-fill"></i></button>
+        <button class="side-button" aria-label="Contatos"><i class="bi bi-people"></i></button>
+        <button class="side-button" aria-label="Explorar"><i class="bi bi-compass"></i></button>
+        <button class="side-button" aria-label="Chamadas"><i class="bi bi-telephone"></i></button>
+        <button class="side-button" aria-label="Configurações"><i class="bi bi-gear"></i></button>
+      </nav>
+      <button class="side-button profile" aria-label="Perfil"><i class="bi bi-person-circle"></i></button>
+    </aside>
 
-            <a href="#">
-                <i class="bi bi-telephone header-icone"></i>
-            </a>
+    <main class="main">
+      <section class="conversations" aria-label="Conversas">
+        <header class="list-header">
+          <h1>Conversas</h1>
+          <div class="tools">
+            <button aria-label="Pesquisar"><i class="bi bi-search"></i></button>
+            <button aria-label="Nova conversa"><i class="bi bi-pencil-square"></i></button>
+            <button aria-label="Mais opções"><i class="bi bi-three-dots-vertical"></i></button>
+          </div>
+        </header>
+        <label class="search">
+          <i class="bi bi-search"></i>
+          <input type="search" placeholder="Pesquisar ou começar uma conversa">
+        </label>
 
-            <a href="#">
-                <i class="bi bi-gear header-icone"></i>
-            </a>
-
-            <a href="#">
-                <i class="bi bi-person-circle header-icone" ></i>
-            </a>
-
+        <div class="chat-list" aria-label="Lista de conversas">
+          <button class="chat active" data-contact="Família" data-members="3 membros">
+            <span class="avatar family">👨‍👩‍👧</span><span class="chat-info">
+              <span class="chat-line"><b>Família</b><time>15:42</time></span>
+              <span class="chat-line"><span class="preview">Até mais! ❤️</span><span class="unread">1</span></span>
+            </span>
+          </button>
+          <button class="chat" data-contact="Amigos da Facul" data-members="4 membros">
+            <span class="avatar facul">🏖️</span><span class="chat-info">
+              <span class="chat-line"><b>Amigos da Facul</b><time>14:37</time></span>
+              <span class="chat-line"><span class="preview">Bora no bar hoje?</span><span class="unread">3</span></span>
+            </span>
+          </button>
+          <button class="chat" data-contact="Trabalho" data-members="2 membros">
+            <span class="avatar work">💻</span><span class="chat-info">
+              <span class="chat-line"><b>Trabalho</b><time>13:20</time></span>
+              <span class="chat-line"><span class="preview">Projeto atualizado ✅</span><i class="bi bi-check2-all check"></i></span>
+            </span>
+          </button>
+          <button class="chat" data-contact="Viagem 2026" data-members="5 membros">
+            <span class="avatar trip">🏞️</span><span class="chat-info">
+              <span class="chat-line"><b>Viagem 2026</b><time>Ontem</time></span>
+              <span class="preview">Já comprei as passagens!</span>
+            </span>
+          </button>
+          <button class="chat" data-contact="Pedro" data-members="1 membro">
+            <span class="avatar pedro">☕</span><span class="chat-info">
+              <span class="chat-line"><b>Pedro</b><time>Ontem</time></span>
+              <span class="preview">Show, valeu!</span>
+            </span>
+          </button>
+          <button class="chat" data-contact="Academia" data-members="3 membros">
+            <span class="avatar academy">A</span><span class="chat-info">
+              <span class="chat-line"><b>Academia</b><time>Ontem</time></span>
+              <span class="preview">Bora treinar amanhã?</span>
+            </span>
+          </button>
+          <button class="chat" data-contact="Diego" data-members="1 membro">
+            <span class="avatar diego">🎮</span><span class="chat-info">
+              <span class="chat-line"><b>Diego</b><time>Sáb</time></span>
+              <span class="preview">Tmj, irmão!</span>
+            </span>
+          </button>
         </div>
+      </section>
 
-        
-        
-
-    </header>
-
-
-
-
-
-</body>
-</html>
+      
