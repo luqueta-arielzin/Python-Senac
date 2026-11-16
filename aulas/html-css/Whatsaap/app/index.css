@@ -8,3 +8,14 @@
   --border: rgba(255, 255, 255, .07);
 }
 
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+body { background: var(--bg); color: var(--text); font: 15px Arial, sans-serif; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+.app { display: flex; width: 100%; height: 100vh; height: 100dvh; }
+.sidebar { width: 72px; flex: 0 0 72px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 14px 0; background: #10171d; border-right: 1px solid var(--border); }
+.side-top { display: grid; gap: 12px; }
+.side-button, .tools button, .composer button { display: grid; place-items: center; border: 0; color: var(--muted); background: transparent; }
+.side-button { width: 48px; height: 48px; border-radius: 15px; font-size: 24px; }
+.side-button:hover, .side-button.active { color: #eafff8; background: #12483d; }
