@@ -19,3 +19,27 @@ button { cursor: pointer; }
 .side-button, .tools button, .composer button { display: grid; place-items: center; border: 0; color: var(--muted); background: transparent; }
 .side-button { width: 48px; height: 48px; border-radius: 15px; font-size: 24px; }
 .side-button:hover, .side-button.active { color: #eafff8; background: #12483d; }
+.side-button.brand { color: white; background: #08ad79; font-size: 29px; }
+.main { display: flex; flex: 1; min-width: 0; min-height: 0; }
+.conversations { display: flex; flex: 0 0 340px; flex-direction: column; min-width: 0; background: var(--panel); border-right: 1px solid var(--border); }
+.list-header, .chat-header { display: flex; flex: 0 0 68px; align-items: center; justify-content: space-between; padding: 0 18px; }
+.list-header h1 { margin: 0; font-size: 25px; }
+.tools { display: flex; align-items: center; gap: 8px; }
+.tools button, .composer button { width: 34px; height: 36px; border-radius: 10px; font-size: 20px; }
+.tools button:hover, .composer button:hover { color: var(--text); background: #26333b; }
+.search { display: flex; flex: 0 0 44px; align-items: center; gap: 10px; margin: 0 12px 10px; padding: 0 13px; border-radius: 14px; color: var(--muted); background: #202b33; }
+.search input, .composer input { flex: 1; min-width: 0; border: 0; outline: 0; color: var(--text); background: transparent; }
+.search input::placeholder, .composer input::placeholder { color: var(--muted); }
+.chat-list { flex: 1; min-height: 0; overflow-y: auto; }
+.chat { display: flex; width: 100%; min-height: 78px; align-items: center; gap: 12px; padding: 10px 14px; border: 0; border-bottom: 1px solid var(--border); color: var(--text); text-align: left; background: transparent; }
+.chat:hover, .chat.active { background: #26363d; }
+.avatar { display: grid; flex: 0 0 50px; width: 50px; height: 50px; place-items: center; border-radius: 50%; font-size: 25px; background: linear-gradient(135deg, #d7c9ff, #8d7ca4); }
+.avatar.small { flex-basis: 40px; width: 40px; height: 40px; font-size: 19px; }
+/* .family { background: linear-gradient(135deg, #b5b7c6, #8990a4); }
+.facul { background: linear-gradient(135deg, #ffe399, #ffba57); }
+.work { background: linear-gradient(135deg, #d7dde6, #737e8f); }
+.trip { background: linear-gradient(135deg, #a3dfff, #5a8dbf); }
+.pedro { background: linear-gradient(135deg, #f0d9b5, #b2824d); }
+.academy { background: linear-gradient(135deg, #7f6de5, #4e2aae); }
+.diego { background: linear-gradient(135deg, #e781ff, #7a48b9); } */
+
