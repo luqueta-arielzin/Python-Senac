@@ -31,3 +31,20 @@ chatItems.forEach((item) => {
     contactAvatar = avatar;
   });
 });
+
+
+
+//   .chat-header .tools button { width: 25px; font-size: 15px; }
+//   .bubble { max-width: 85%; padding: 8px 10px; font-size: 13px; }
+//   .composer { gap: 4px; padding: 6px; }
+//   .composer button { width: 27px; font-size: 16px; }
+//   .composer .mic { flex-basis: 36px; width: 36px; height: 36px; }
+// }
+
+
+
+
+
+
+
+
